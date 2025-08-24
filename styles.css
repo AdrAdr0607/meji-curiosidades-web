@@ -1,3 +1,37 @@
 *{
-    background-color: gray;
+    margin: 0;
+    font-family: 'Questrial', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@font-face {
+    font-family: 'Questrial';
+    src: url('fonts/Questrial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#caja_titulo{
+    background-color: lightblue;
+    height: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/mejillones_capitania.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+    color: white;
+}
+
+#titulo{
+    font-size: 50px;
+    text-align: center;
+    backdrop-filter: blur(1px);
+    color: rgb(255, 255, 255);
+    background-color: hsla(0, 0%, 7%, 0.3);
+    padding: 30px;
+    background-color: 100%;
+    width: 100%;
 }
