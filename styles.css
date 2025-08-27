@@ -4,7 +4,7 @@
 }
 
 body{
-    overflow-x: hidden;
+    
 
 }
 
@@ -48,16 +48,23 @@ body{
 }
 
 #caja_curiosidades{
-    width: 100%;
-    height: 600px;
+    width: 100vhd;
+    height: 1000px;
     background-color: aquamarine;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caja_curiosidad {
     width: 100%;
-    height: 200px;
+    height: 500px;
     background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
 }
 
 .parrafo_entrada{
@@ -67,25 +74,17 @@ body{
 img {
     height: 200px;
     width: 200px;
-}
-
-#imagen_de_condorito{
-    background-image: url(images/condorito_plaza.jpg);
-    z-index: -1;
-    width: 200px;
-    height: 200px;
+    border-radius: 2px;
+    max-height: 100%;
+    margin-top: 10px;
 }
 
 #primera_curiosidad, #segunda_curiosidad, #tercera_curiosidad, #cuarta_curiosidad {
-    height: 200px;
+    height: 600px;
     width: 100%;
     background-color: rgb(173, 173, 173);
     margin-bottom: 20px;
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
-}
-
-img {
-    border-radius: 2%;
 }
