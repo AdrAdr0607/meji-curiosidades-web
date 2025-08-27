@@ -3,6 +3,11 @@
     font-family: 'Questrial', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+
+}
+
 @font-face {
     font-family: 'Questrial';
     src: url('fonts/Questrial-Regular.ttf') format('truetype');
@@ -34,7 +39,6 @@
     padding: 30px;
     background-color: 100%;
     width: 100%;
-    z-index: 1;
 }
 
 #introduccion{
@@ -45,6 +49,43 @@
 
 #caja_curiosidades{
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-color: aquamarine;
+    padding: 30px;
+}
+
+.caja_curiosidad {
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+}
+
+.parrafo_entrada{
+    margin-top: 20px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+#imagen_de_condorito{
+    background-image: url(images/condorito_plaza.jpg);
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+}
+
+#primera_curiosidad, #segunda_curiosidad, #tercera_curiosidad, #cuarta_curiosidad {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(173, 173, 173);
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+img {
+    border-radius: 2%;
 }
