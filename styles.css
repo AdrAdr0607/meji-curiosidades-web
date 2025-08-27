@@ -12,7 +12,7 @@
 
 #caja_titulo{
     background-color: lightblue;
-    height: 320px;
+    height: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -34,4 +34,17 @@
     padding: 30px;
     background-color: 100%;
     width: 100%;
+    z-index: 1;
+}
+
+#introduccion{
+    width: 100%;
+    height: 400px;
+    
+}
+
+#caja_curiosidades{
+    width: 100%;
+    height: 400px;
+    background-color: aquamarine;
 }
