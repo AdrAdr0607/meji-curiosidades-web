@@ -47,24 +47,31 @@ body{
     
 }
 
-#caja_curiosidades{
+#contenedor_curiosidades{
     width: 100vhd;
-    height: 1000px;
-    background-color: aquamarine;
+    height: 1200px;
+    background-color: rgb(44, 44, 44);
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#imagen_condorito{
+    margin: auto;
+}
+
 .caja_curiosidad {
-    width: 100%;
+    width: 85%;
     height: 500px;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.377);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 60px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 2%;
+    border: 1px solid black;
+    color: white
 }
 
 .parrafo_entrada{
@@ -79,12 +86,3 @@ img {
     margin-top: 10px;
 }
 
-#primera_curiosidad, #segunda_curiosidad, #tercera_curiosidad, #cuarta_curiosidad {
-    height: 600px;
-    width: 100%;
-    background-color: rgb(173, 173, 173);
-    margin-bottom: 20px;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px;
-}
