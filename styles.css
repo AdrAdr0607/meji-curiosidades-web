@@ -46,9 +46,10 @@ body{
     width: 610px;
 }
 
+/*segunda caja, es la que contiene la introduccion a mejillones*/
 #contenedor_introduccion{
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-color: rgb(255, 255, 255);
     padding: 20px;
     display: flex;
@@ -69,80 +70,61 @@ body{
     padding-top: 20px;
 }
 
-#contenedor_curiosidades{
-    width: 100vhd;
-    height: 1200px;
-    background-color: rgb(255, 255, 255);
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#imagen_condorito{
-    margin: auto;
-}
-
-.caja_curiosidad {
-    width: 85%;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.377);
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 2%;
-    border: 1px solid black;
-    color: white
-}
-
-.parrafo_entrada{
-    margin-top: 20px;
-}
-
-
 #contenedor_general_de_las_curiosidades{
+
+    /*ocupar todo el ancho de la pantalla*/
     width: 100%;
+
+    /*altura total de la caja*/
     height: 2000px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /*espacio que hay entre cada esquina de toda la caja*/
     padding: 30px;
-    gap: 100px;
+
+    /*espacio que hay entre cada elemento hijo*/
+    gap: 30px;
     
 }
 
-#primera_curiosidad_1, #segunda_curiosidad_2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #imagen_molusco1{
+    /*tamaño en si de la imagen*/
     width: 400px;
+
+    /*para centrar los */
     margin: auto;
     display: flex;
+
+    /*espacio que hay arriba de las imagenes*/
+    margin-top: 40px;
+
+    /*espacio que hay abajo de las imagenes*/
+    margin-bottom: 60px;
+}
+
+/*titulo respectivo a cada curiosidad*/
+#titulo_primera_curiosidad, #titulo_segunda_curiosidad, #titulo_tercera_curiosidad, #titulo_cuarta_curiosidad{
+    /*cubrimos todo el ancho de la pantalla*/
+    width: 100%;
+
+    /*ponemos el texto a la izquierda de la pantalla*/
+    text-align: left;
+
+    /*espacio que hay debajo de cada titulo*/
+    margin-bottom: 5px;
+
+    /*espacio que hay arriba de cada titulo*/
     margin-top: 20px;
 }
 
-#titulo_primera_curiosidad, #titulo_segunda_curiosidad{
+/*descripcion de cada curiosidad*/
+#descripcion_primera_curiosidad, #descripcion_segunda_curiosidad, #descripcion_tercera_curiosidad, #descripcion_cuarta_curiosidad{
+    /*para que se vea centrado en su caja*/
+    text-align: center;
+
+    /*para que pueda cubrirtodo el ancho de la pantalla*/
     width: 100%;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-#caja_primera_curiosidad{
-}
-
-#ejemplo{
-    text-align: center;
-    width: 50%;
-    margin: auto;
-}
-
-#descripcion_primera_curiosidad{
-    text-align: center;
-    width: 50%;
-    margin: auto;
 }
 
