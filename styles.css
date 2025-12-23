@@ -6,7 +6,43 @@
 
 body{
     
+}
 
+#barra_superior{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100; 
+}
+
+
+nav ul {
+    list-style: none; /* quita los puntos */
+    display: flex; /* horizontal */
+    justify-content: center; /* centra los items */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 25px; /* espacio entre enlaces */
+}
+
+nav ul li a {
+    color: #ffffff; /* texto blanco */
+    text-decoration: none; /* quita subrayado */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* animación */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* color al pasar el mouse */
+    transform: scale(1.1); /* pequeño zoom */
 }
 
 @font-face {
@@ -18,7 +54,7 @@ body{
 
 #caja_titulo{
     background-color: lightblue;
-    height: 400px;
+    height: 550px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -29,6 +65,15 @@ body{
     background-size: cover;
     background-position: 50% 70%;
     color: white;
+
+
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
 }
 
 #titulo{
@@ -56,6 +101,7 @@ body{
     align-items: center;
     flex-direction: column;
     padding-top: 40px;
+    margin-top: 70px;
 }
 
 #contenido {
@@ -70,13 +116,28 @@ body{
     padding-top: 50px;
 }
 
+#subtitulo_curiosidades{
+    font-size: 40px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#caja_subtitulo_curiosidades{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 90px;
+}
+
 #contenedor_general_de_las_curiosidades{
 
     /*ocupar todo el ancho de la pantalla*/
     width: 100%;
 
     /*altura total de la caja*/
-    height: 2500px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,29 +150,29 @@ body{
     color: white;
 }
 
-#caja_primera_curiosidad, #caja_segunda_curiosidad, #caja_tercera_curiosidad {
+#caja_primera_curiosidad, #caja_segunda_curiosidad, #caja_tercera_curiosidad, #caja_cuarta_curiosidad, #caja_quinta_curiosidad {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    width: 97%;
     height: 100%;
-    gap: 1em;
-    padding: 2em;
+    gap: 0.5em;
+    padding: 0.5em;
 }
 
-#caja_hija1_primera_curiosidad, #caja_hija2_segunda_curiosidad, #caja_hija1_tercera_curiosidad {
+.texto {
     display: grid;
     grid-template-rows: 1fr 3fr;
     place-items: center;
 }
 
-#caja_hija2_primera_curiosidad, #caja_hija1_segunda_curiosidad, #caja_hija2_tercera_curiosidad {
+.imagenes {
     display: grid;
     object-fit: cover;
     overflow: hidden
 }
 
-#caja_hija1_primera_curiosidad, #caja_hija2_primera_curiosidad, #caja_hija1_segunda_curiosidad, #caja_hija2_segunda_curiosidad, #caja_hija1_tercera_curiosidad, #caja_hija2_tercera_curiosidad {
-    background-color: rgb(0, 0, 0);
+.franja {
+    background-color: hsla(0, 0%, 7%, 0.8);
     display: grid;
     justify-content: center;
     height: 500px;
@@ -119,28 +180,13 @@ body{
     border-radius: 2rem;
 }
 
-#imagen_molusco1, #imagen_condorito, #imagen_gaviotin_chico {
+#imagen_molusco1, #imagen_condorito, #imagen_gaviotin_chico, #imagen_capitania, #imagen_capitania1 {
     width: 100%;
     object-fit: cover;
 }
 
-#imagen_capitania {
-    /*tamaño en si de la imagen*/
-    width: 400px;
-
-    /*para centrar los */
-    margin: auto;
-    display: flex;
-
-    /*espacio que hay arriba de las imagenes*/
-    margin-top: 40px;
-
-    /*espacio que hay abajo de las imagenes*/
-    margin-bottom: 60px;
-}
-
 /*titulo respectivo a cada curiosidad*/
-#titulo_primera_curiosidad, #titulo_segunda_curiosidad, #titulo_tercera_curiosidad, #titulo_cuarta_curiosidad{
+#titulo_primera_curiosidad, #titulo_segunda_curiosidad, #titulo_tercera_curiosidad, #titulo_cuarta_curiosidad, #titulo_quinta_curiosidad{
     /*cubrimos todo el ancho de la pantalla*/
     width: 100%;
 
@@ -155,11 +201,25 @@ body{
 }
 
 /*descripcion de cada curiosidad*/
-#descripcion_primera_curiosidad, #descripcion_segunda_curiosidad, #descripcion_tercera_curiosidad, #descripcion_cuarta_curiosidad{
+#descripcion_primera_curiosidad, #descripcion_segunda_curiosidad, #descripcion_tercera_curiosidad, #descripcion_cuarta_curiosidad, #descripcion_quinta_curiosidad{
     /*para que se vea centrado en su caja*/
     text-align: center;
 
     /*para que pueda cubrirtodo el ancho de la pantalla*/
     width: 80%;
+}
+
+#caja_subtitulo_fuentes{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    height: 40px;
+    margin-top: 150px;
+}
+
+#contenedor_fuentes{
+    background-color: green;
+    width: 50%;
+    margin: auto;
 }
 
