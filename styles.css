@@ -87,6 +87,11 @@ nav ul li a:hover {
     width: 100%;
 }
 
+#imagen_ubicacion{
+    border-radius: 2rem;
+    margin-top: 40px;
+}
+
 .lineas_horizontales_contenido{
     width: 610px;
 }
@@ -94,7 +99,7 @@ nav ul li a:hover {
 /*segunda caja, es la que contiene la introduccion a mejillones*/
 #contenedor_introduccion{
     width: 100%;
-    height: 350px;
+    height: 650px;
     background-color: rgb(255, 255, 255);
     padding: 20px;
     display: flex;
@@ -102,6 +107,11 @@ nav ul li a:hover {
     flex-direction: column;
     padding-top: 40px;
     margin-top: 70px;
+}
+
+#mapa{
+    margin-top: 55px;
+    border-radius: 2rem;
 }
 
 #contenido {
@@ -114,6 +124,7 @@ nav ul li a:hover {
     width: 60%;
     text-align: center;
     padding-top: 50px;
+    font-size: 20px;
 }
 
 #subtitulo_curiosidades{
@@ -205,22 +216,24 @@ nav ul li a:hover {
     /*para que se vea centrado en su caja*/
     text-align: center;
 
+    font-size: 21px;
+
     /*para que pueda cubrirtodo el ancho de la pantalla*/
     width: 80%;
 }
 
 #caja_subtitulo_fuentes{
     display: flex;
-    width: 50%;
+    width: 55%;
     margin: auto;
-    height: 200px;
+    height: 400px;
     margin-top: 150px;
     flex-direction: column;
     align-items: center;
 }
 
 #boton {
-    height: 20%;
+    height: 10%;
     width: 40%;
     cursor: pointer;
     color: #000000; /* color al pasar el mouse */
@@ -244,8 +257,17 @@ nav ul li a:hover {
     overflow: hidden;            /* oculta contenido extra */
     transition: 0.7s ease; /* animación suave */
     background-color: #f1f1f1;
-    padding: 0 20px;
     border-radius: 5px;
     margin-top: 5px;
+    padding: 0 20px;
+    width: 80%;
 }
 
+#p_info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.e_lista {
+    margin-bottom: 10px;
+}
