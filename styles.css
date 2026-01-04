@@ -209,6 +209,8 @@ nav ul li a:hover {
 
     /*espacio que hay arriba de cada titulo*/
     margin-top: 20px;
+
+    font-size: 25px;
 }
 
 /*descripcion de cada curiosidad*/
@@ -216,7 +218,7 @@ nav ul li a:hover {
     /*para que se vea centrado en su caja*/
     text-align: center;
 
-    font-size: 21px;
+    font-size: 22px;
 
     /*para que pueda cubrirtodo el ancho de la pantalla*/
     width: 80%;
@@ -266,8 +268,10 @@ nav ul li a:hover {
 #p_info {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .e_lista {
     margin-bottom: 10px;
+    font-size: 17px;
 }
