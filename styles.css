@@ -158,6 +158,7 @@ nav ul li a:hover {
     /*espacio que hay entre cada elemento hijo*/
     gap: 50px;
     
+    /*color del texto */
     color: white;
 }
 
@@ -177,8 +178,8 @@ nav ul li a:hover {
 }
 
 .imagenes {
-    display: grid;
-    object-fit: cover;
+
+    /*los bordes de la imagen no sobresalen el marco de la caja*/
     overflow: hidden
 }
 
@@ -191,9 +192,16 @@ nav ul li a:hover {
     border-radius: 2rem;
 }
 
-#imagen_molusco1, #imagen_condorito, #imagen_gaviotin_chico, #imagen_capitania, #imagen_capitania1 {
+#imagen_molusco1, #imagen_condorito, #imagen_gaviotin_chico, #imagen_casa_jovanka, #imagen_mirador {
     width: 100%;
     object-fit: cover;
+}
+
+#imagen_casa_jovanka {
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 /*titulo respectivo a cada curiosidad*/
@@ -234,6 +242,7 @@ nav ul li a:hover {
     align-items: center;
 }
 
+/*boton que muestra las fuentes consultadas*/
 #boton {
     height: 10%;
     width: 40%;
@@ -255,8 +264,8 @@ nav ul li a:hover {
 }
 
 #contenedor_fuentes{
-    max-height: 0;               /* empieza oculto */
-    overflow: hidden;            /* oculta contenido extra */
+    max-height: 0; /* empieza oculto */
+    overflow: hidden; /* oculta contenido extra */
     transition: 0.7s ease; /* animación suave */
     background-color: #f1f1f1;
     border-radius: 5px;
