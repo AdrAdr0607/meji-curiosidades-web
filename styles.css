@@ -89,11 +89,12 @@ nav ul li a:hover {
 
 #imagen_ubicacion{
     border-radius: 2rem;
-    margin-top: 40px;
+    margin-top: 70px;
+    width: 40%;
 }
 
 .lineas_horizontales_contenido{
-    width: 610px;
+    width: 60vw;
 }
 
 /*segunda caja, es la que contiene la introduccion a mejillones*/
@@ -118,6 +119,7 @@ nav ul li a:hover {
     font-size: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 #texto_introduccion{
@@ -175,6 +177,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-rows: 1fr 3fr;
     place-items: center;
+    overflow: hidden;
 }
 
 .imagenes {
@@ -193,7 +196,13 @@ nav ul li a:hover {
 }
 
 #imagen_molusco1, #imagen_condorito, #imagen_gaviotin_chico, #imagen_casa_jovanka, #imagen_mirador {
-    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#imagen_molusco2, #imagen_condorito2, #imagen_gaviotin_chico2, #imagen_casa_jovanka2, #imagen_mirador2 {
+    display: none;
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -245,7 +254,7 @@ nav ul li a:hover {
 /*boton que muestra las fuentes consultadas*/
 #boton {
     height: 10%;
-    width: 40%;
+    width: 400px;
     cursor: pointer;
     color: #000000; /* color al pasar el mouse */
     background-color: black;
@@ -253,7 +262,6 @@ nav ul li a:hover {
     font-weight: bold;
     color: #ffffff; /* texto blanco */
     text-decoration: none; /* quita subrayado */
-    font-size: 18px;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease; /* animación */
 }
@@ -278,9 +286,62 @@ nav ul li a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
+    text-align: left;
 }
 
 .e_lista {
     margin-bottom: 10px;
     font-size: 17px;
+}
+
+@media (max-width: 480px){
+
+    #titulo {
+        font-size: 40px;
+    }
+
+    #titulo_primera_curiosidad, #titulo_segunda_curiosidad, #titulo_tercera_curiosidad, #titulo_cuarta_curiosidad, #titulo_quinta_curiosidad {
+        font-size: 20px;
+    }
+    #descripcion_primera_curiosidad, #descripcion_segunda_curiosidad, #descripcion_tercera_curiosidad, #descripcion_cuarta_curiosidad, #descripcion_quinta_curiosidad {
+        font-size: 17px;
+    }
+
+    #caja_primera_curiosidad, #caja_segunda_curiosidad, #caja_tercera_curiosidad, #caja_cuarta_curiosidad, #caja_quinta_curiosidad{
+
+        grid-template-columns: 1fr;
+    }
+
+    .imagenes {
+        display: none;
+    }
+
+    #imagen_molusco2, #imagen_condorito2, #imagen_gaviotin_chico2, #imagen_casa_jovanka2, #imagen_mirador2 {
+        display: block;
+        width: 100%;       /* Ocupa todo el ancho de la caja */
+        height: 210px;     /* AQUÍ defines el espacio fijo (puedes cambiar el número) */
+        object-fit: cover;
+    }
+
+    #imagen_condorito2 {
+        object-position: top;
+    }
+
+    #imagen_ubicacion {
+        width: 80%;
+    }
+
+    #boton {
+        width: 200px;
+    }
+
+    #contenedor_fuentes{
+        width: 150%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    #caja_subtitulo_fuentes {
+        height: 750px;
+    }
 }
