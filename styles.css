@@ -245,7 +245,7 @@ nav ul li a:hover {
     display: flex;
     width: 55%;
     margin: auto;
-    height: 600px;
+    height: 550px;
     margin-top: 150px;
     flex-direction: column;
     align-items: center;
@@ -307,6 +307,15 @@ nav ul li a:hover {
         font-size: 17px;
     }
 
+    #descripcion_tercera_curiosidad, #descripcion_quinta_curiosidad {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #contenido, #subtitulo_curiosidades {
+        font-size: 30px;
+    }
+
     #caja_primera_curiosidad, #caja_segunda_curiosidad, #caja_tercera_curiosidad, #caja_cuarta_curiosidad, #caja_quinta_curiosidad{
 
         grid-template-columns: 1fr;
@@ -346,16 +355,18 @@ nav ul li a:hover {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1300px) {
+@media (min-width: 992px) and (max-width: 1600px) {
 
-    #imagen_molusco1, #imagen_condorito, #imagen_gaviotin_chico, #imagen_casa_jovanka, #imagen_mirador {
+    #imagen_molusco1, #imagen_condorito, #imagen_gaviotin_chico, #imagen_mirador {
         width: 100%;
         height: 100%;
         object-fit: cover;    /* rellena todo el cuadro */
         object-position: center; /* centra la imagen */
     }
 
+
     #imagen_mirador {
         object-position: 70% 50%; /* el porcentaje de la izquierda representa de izquierda a derecha y el de la derecha de arriba hacia abajo */
     }
+    
 }
