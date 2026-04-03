@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    width: 100%;
-}
-
 #barra_superior{
     background-color: black;
     height: 50px;
@@ -16,7 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 100; 
+    z-index: 101; 
 }
 
 
@@ -150,7 +146,7 @@ nav ul li a:hover {
     width: 100%;
 
     /*altura total de la caja*/
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,6 +158,8 @@ nav ul li a:hover {
     
     /*color del texto */
     color: white;
+
+    margin-bottom: 100px;
 }
 
 #caja_primera_curiosidad, #caja_segunda_curiosidad, #caja_tercera_curiosidad, #caja_cuarta_curiosidad, #caja_quinta_curiosidad {
@@ -243,10 +241,10 @@ nav ul li a:hover {
 
 #caja_subtitulo_fuentes{
     display: flex;
-    width: 55%;
+    width: 100%;
     margin: auto;
-    height: 550px;
-    margin-top: 150px;
+    height: 100%;
+    margin-top: 100px;
     flex-direction: column;
     align-items: center;
 }
@@ -294,26 +292,78 @@ nav ul li a:hover {
     font-size: 17px;
 }
 
-.footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
+#prueba1 {
+    padding: 50px;
+    bottom: 0;       /* Pegada al borde inferior */
+    left: 0;         /* Alineada a la izquierda */
+    width: 100%;     /* Ocupa todo el ancho si lo deseas */
+    height: 250px;
+    background-color: #000000;
     color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;   /* Para que siempre esté por encima de otros elementos */
+    margin-top: 40px;
 }
 
-@media (max-width: 480px){
+#contenedor_texto {
+    padding-top: 30px;
+    width: 70%;
+}
+
+#contenedor_imagenes {
+    margin-top: 30px;
+    gap: 20%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(1px 0px 0px rgb(255, 255, 255)) 
+          drop-shadow(-0.5px 0px 0px rgb(255, 255, 255)) 
+          drop-shadow(0px 1px 0px rgb(255, 255, 255)) 
+          drop-shadow(0px 1px 0px rgb(255, 255, 255))
+}
+
+#texto1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media (max-width: 919px){
+
+    #prueba1 {
+        padding: 20px;
+        
+    }
+
+    #texto1 {
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+    #caja_subtitulo_fuentes {
+        height: 100%;
+        margin-top: 10px;
+    }
 
     #titulo {
         font-size: 40px;
     }
 
+    #texto_introduccion {
+        width: 70%;
+    }
+
+
     #titulo_primera_curiosidad, #titulo_segunda_curiosidad, #titulo_tercera_curiosidad, #titulo_cuarta_curiosidad, #titulo_quinta_curiosidad {
         font-size: 20px;
+        width: 90%;
     }
     #descripcion_primera_curiosidad, #descripcion_segunda_curiosidad, #descripcion_tercera_curiosidad, #descripcion_cuarta_curiosidad, #descripcion_quinta_curiosidad {
         font-size: 17px;
+        width: 90%;
     }
 
     #descripcion_tercera_curiosidad, #descripcion_quinta_curiosidad {
@@ -336,9 +386,13 @@ nav ul li a:hover {
 
     #imagen_molusco2, #imagen_condorito2, #imagen_gaviotin_chico2, #imagen_casa_jovanka2, #imagen_mirador2 {
         display: block;
-        width: 100%;       /* Ocupa todo el ancho de la caja */
-        height: 210px;     /* AQUÍ defines el espacio fijo (puedes cambiar el número) */
+        width: 100%;
+        height: 210px;
         object-fit: cover;
+    }
+
+    #imagen_mirado2 {
+        min-width: 200px;
     }
 
     #imagen_condorito2 {
@@ -354,17 +408,25 @@ nav ul li a:hover {
     }
 
     #contenedor_fuentes{
-        width: 150%;
+        width: 80%;
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
 
-    #caja_subtitulo_fuentes {
-        height: 760px;
+    #contenedor_texto {
+        width: 80%;
+    }
+
+    #imagen_fundacion, #imagen_centinela {
+        width: 100px;
+    }
+
+    #caja_subtitulo_curiosidades {
+        margin-top: 50px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1600px) {
+@media (min-width: 920px) and (max-width: 1600px) {
 
     #imagen_molusco1, #imagen_condorito, #imagen_gaviotin_chico, #imagen_mirador {
         width: 100%;
